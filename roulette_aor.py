@@ -19,29 +19,39 @@ The house advantage in single zero roulette is 2.7% and for the double zero game
 
 '''
 
+# https://www.geeksforgeeks.org/print-colors-python-terminal/
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
-
-
 def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
-
-
 def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
-
-
 def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
-
-
 def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
-
-
 def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
-
-
 def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
-
-
 def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 
+
+# Raikage Print
+COLOR_RED = "\033[91m {}\033[00m"
+COLOR_GREEN = "\033[92m {}\033[00m"
+COLOR_YELLOW = "\033[93m {}\033[00m"
+COLOR_LIGHT_PURPLE = "\033[94m {}\033[00m"
+COLOR_PURPLE = "\033[95m {}\033[00m"
+COLOR_CYAN = "\033[96m {}\033[00m"
+COLOR_LIGHT_GRAY = "\033[97m {}\033[00m"
+COLOR_BLACK = "\033[98m {}\033[00m"
+def prColor(fg_text_color, text_content):
+    print(fg_text_color.format(text_content))
+    
+__raikage_dunder__ = "King Ahmed - The 9th Raikage"
+    
+prColor(COLOR_RED, __raikage_dunder__)
+prColor(COLOR_GREEN, __raikage_dunder__)
+prColor(COLOR_YELLOW, __raikage_dunder__)
+prColor(COLOR_LIGHT_PURPLE, __raikage_dunder__)
+prColor(COLOR_PURPLE, __raikage_dunder__)
+prColor(COLOR_CYAN, __raikage_dunder__)
+prColor(COLOR_LIGHT_GRAY, __raikage_dunder__)
+prColor(COLOR_BLACK, __raikage_dunder__)
 '''
 Color Print Examples 
 https://www.studytonight.com/python-howtos/how-to-print-colored-text-in-python
