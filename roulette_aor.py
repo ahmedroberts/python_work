@@ -44,6 +44,7 @@ def prColor(fg_text_color, text_content):
     
 __raikage_dunder__ = "King Ahmed - The 9th Raikage"
     
+'''
 prColor(COLOR_RED, __raikage_dunder__)
 prColor(COLOR_GREEN, __raikage_dunder__)
 prColor(COLOR_YELLOW, __raikage_dunder__)
@@ -52,6 +53,8 @@ prColor(COLOR_PURPLE, __raikage_dunder__)
 prColor(COLOR_CYAN, __raikage_dunder__)
 prColor(COLOR_LIGHT_GRAY, __raikage_dunder__)
 prColor(COLOR_BLACK, __raikage_dunder__)
+'''
+
 '''
 Color Print Examples 
 https://www.studytonight.com/python-howtos/how-to-print-colored-text-in-python
@@ -77,6 +80,9 @@ odd_number = [2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36]
 first_col  = [1,4,7,10,13,16,19,22,25,28,31,34]
 second_col = [2,5,8,11,14,17,20,23,26,29,32,35]
 third_col  = [3,6,9,12,15,18,21,24,27,30,33,36]
+first_doz  = [1,2,3,4,5,6,7,8,9,10,11,12]
+second_doz = [13,14,15,16,17,18,19,20,21,22,23,24]
+third_doz  = [25,26,27,28,29,30,31,32,33,34,35,36]
 
 RED = red_number
 print(f"Red Numbers: {RED}")
@@ -112,7 +118,9 @@ for item in range(1, 9):
         
     # Display Results
     if item in black_number:
-        prCyan(spin_msg)
+        # prCyan(spin_msg)
+        prColor(COLOR_LIGHT_GRAY, spin_msg)
     else:
-        prRed(spin_msg)
+        # prRed(spin_msg)
+        prColor(COLOR_PURPLE, spin_msg)
 prGreen("\n*******************\t*************\t*******************\n\n")
