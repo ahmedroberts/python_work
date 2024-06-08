@@ -65,5 +65,15 @@ superhero_ids = {
 
 for k, v in superhero_ids.items():
   print(f'{k} is really {v}!😮')
+  
+prices = {}  # Create empty dictionary
+prices['banana'] = 1.49  # Add new entry
+print(prices)
+
+prices['banana'] = 1.69  # Modify entry
+print(prices)
+
+del prices['banana']  # Remove entry
+print(prices)
 #-----------------------------------------------------------------------
 print(f'\n{code_break}\n')
