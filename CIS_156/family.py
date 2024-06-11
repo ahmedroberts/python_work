@@ -19,6 +19,6 @@ print(f'{key_two} is {second_person_age} years old.')
 first_family_dict['Tim'] = 23
 print(first_family_dict)
 
-entered_key = input('Enter a person:\n')
+entered_key = input('Enter the name to lookup: ')
 entered_person_age = first_family_dict.get(entered_key)
 print(f'{entered_key} is {entered_person_age} years old.')
