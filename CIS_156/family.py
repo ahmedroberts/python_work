@@ -1,7 +1,7 @@
 # Ahmed O. Roberts | June 10, 2025
 # CIS 156 | Python Programming | Level 1
 # Module 03 Programming Assignment
-# Part A
+# Part B
 
 # Create Milestone family dictionary
 first_family_dict = {
