@@ -13,8 +13,17 @@ first_name = input('\nPlease enter your first name:\n')
 last_name = input('\nPlease enter your last name:\n')
 full_name = first_name + ' ' + last_name
 
+# Print full name
 print(full_name)
+
+# Print length of full name
 print(len(full_name))
-print(first_name[0])
-print(last_name[0])
+
+# Print first initial of first name
+print(first_name[0] + '.')
+
+# Print first initial of last name
+print(last_name[0] + '.')
+
+# print 2nd to last letter of the last name
 print(last_name[-2])
