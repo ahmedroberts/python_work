@@ -12,9 +12,14 @@
 first_name = input('\nPlease enter your first name:\n')
 last_name = input('\nPlease enter your last name:\n')
 full_name = first_name + ' ' + last_name
+section_break = '\n#------------------------------------------------\n'
 
+print(section_break)
 print(full_name)
-print(len(full_name))
-print(first_name[0])
-print(last_name[0])
-print(last_name[-2])
+print(f'The length of the full name is `{len(full_name)}`')
+print(f'The first letter of the first name is `{first_name[0]}.`')
+print(f'The first letter of the last name is `{last_name[0]}.`')
+print(f'The second to last letter of the first name is `{last_name[-2]}.`')
+print(section_break)
+# print(section_break)
+# print(section_break)
