@@ -120,3 +120,46 @@ elif 1 <= num_books <= 27:
   print('Medium bookshelf')
 else:
   print('Invalid input')
+
+#-----------------------------------------------------------------------
+print(f'\n{code_break}\n')
+number_of_parts = int(input())
+
+if number_of_parts == 1:
+  print('Monad')
+elif number_of_parts == 2:
+  print('Dyad')
+elif number_of_parts == 4:
+  print('Tetrad')
+else:
+  print('Another number of components')
+
+#-----------------------------------------------------------------------
+print(f'\n{code_break}\n')
+
+supplied_cups = int(input())
+
+''' Your code goes here '''
+if (55 < supplied_cups <= 90):
+    print('Standard package')
+elif (120 < supplied_cups <= 160):
+    print('Full package')
+else:
+    print('Not efficient to ship')
+
+#-----------------------------------------------------------------------
+print(f'\n{code_break}\n')
+#-----------------------------------------------------------------------
+print(f'\n{code_break}\n')
+
+if 'New York' in temperatures:
+    if temperatures['New York'] > 90:
+      print('The city is melting!')
+    else:
+        print(f"The temperature in New York is {temperatures['New York']}.")
+else:
+    print('The temperature in New York is unknown.')
+    
+print(f'Side length: {s} cm')
+print(f'Area: {area:.2f} cm^2')
+print(f'Perimeter: {perimeter:.2f} cm')
