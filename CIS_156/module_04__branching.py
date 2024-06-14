@@ -135,6 +135,7 @@ else:
   print('Another number of components')
 
 #-----------------------------------------------------------------------
+# Practice if-else statements
 print(f'\n{code_break}\n')
 
 supplied_cups = int(input())
@@ -147,8 +148,23 @@ elif (120 < supplied_cups <= 160):
 else:
     print('Not efficient to ship')
 
-#-----------------------------------------------------------------------
 print(f'\n{code_break}\n')
+#-----------------------------------------------------------------------
+# Nested if-else statements
+user_choice = 2  # Hardcoded values for this tool. Could be input()...
+num_items = 5
+
+if user_choice == 1:    
+   print('user_choice is 1')
+elif user_choice == 2:
+   if num_items < 0:
+      print('user_choice is 2 and num_items < 0')
+   else:
+	      print('user_choice is 2 and num_items >= 0')
+else:
+	 print('user_choice is neither 1 or 2')
+
+
 #-----------------------------------------------------------------------
 print(f'\n{code_break}\n')
 
@@ -163,3 +179,139 @@ else:
 print(f'Side length: {s} cm')
 print(f'Area: {area:.2f} cm^2')
 print(f'Perimeter: {perimeter:.2f} cm')
+
+print(f'\n{code_break}\n')
+#-----------------------------------------------------------------------
+# Multiple distinct IF
+
+
+print(f'\n{code_break}\n')
+#-----------------------------------------------------------------------
+# Challenges
+'''
+If time_spent is greater than or equal to 36, then output 'I can complete my homework.'
+If time_spent is greater than 53, then output 'I can finish my homework and have extra time.'
+If time_spent is less than 7, then output 'I do not have time to do my homework.'
+'''
+
+time_after_class = int(input())
+
+''' Your code goes here '''
+
+if 14 <= time_after_class:
+  print('I can complete my homework.')
+  
+if 30 < time_after_class:
+  print('I can finish my homework and have extra time.')
+  
+if 6 > time_after_class:
+  print('I do not have time to do my homework.')
+
+print(f'\n{code_break}\n')
+#-----------------------------------------------------------------------
+# Challenges
+
+'''
+If input_num1 is greater than or equal to 30, then output 'input_num1 is greater than or equal to 30.'
+If input_num2 is less than 15, then assign input_num2 with 1.
+Otherwise, output 'input_num2 is greater than or equal to 15.'
+'''
+
+input_num1 = int(input())
+input_num2 = int(input())
+
+''' Your code goes here '''
+if input_num1 >= 30:
+  print('input_num1 is greater than or equal to 30.')
+  
+if input_num2 < 15:
+  input_num2 = 1
+else:
+  print('input_num2 is greater than or equal to 15.')
+
+print(f'input_num2 is {input_num2}.')
+
+print(f'\n{code_break}\n')
+#-----------------------------------------------------------------------
+# Challenges
+'''
+Integers num_mangos and money_in_bank are read from input. Each mango costs 3 dollars.
+
+Write the following if-else statement. Within the if branch, write the following assignment and nested if-else statement:
+
+If num_mangos is greater than or equal to 4:
+Assign variable total_cost with the product of num_mangos and 3.
+If total_cost is less than or equal to money_in_bank, then output 'Mangos successfully purchased'.
+Otherwise, output 'Not enough money to buy all'.
+Otherwise, output 'Please purchase at least 4 mangos'.
+'''
+
+num_mangos = int(input())
+money_in_bank = int(input())
+
+''' Your code goes here '''
+if num_mangos >= 4:
+  total_cost = 3 * num_mangos
+  if total_cost <= money_in_bank:
+    print('Mangos successfully purchased')
+  else:
+    print('Not enough money to buy all')
+else:
+  print('Please purchase at least 4 mangos')
+  
+print(f'\n{code_break}\n')
+#-----------------------------------------------------------------------
+# Membership and Identity
+
+special_list = [-99, 0, 44]
+special_num = int(input())
+
+if special_num in special_list:
+    print('Special number')
+else:
+    print('Not special number')
+    
+print(f'\n{code_break}\n')
+#-----------------------------------------------------------------------
+# Fix the indentation in the code below
+b = int(input())
+h = int(input())
+area = 0.5 * b * h
+
+print(f'Base = {b} in')
+print(f'Height = {h} in')
+print(f'Area = {area:.2f} in^2')
+
+child_age = input()
+color = input()
+
+print(f'\n{code_break}\n')
+#-----------------------------------------------------------------------
+# Implicit Join
+# Modify the following line
+biography_str = ('Gale is {0} years old and lives in Cheyenne, Wyoming. '
+                 'Their favorite color is {1} and they want to be a marine '
+                 'biologist when they grow up.')
+
+# format() replaces the curly braces in a string with variables.
+# This method is being used to test your code.
+new_str = biography_str.format(child_age, color)
+print(new_str)
+
+print(f'\n{code_break}\n')
+#-----------------------------------------------------------------------
+# Conditional Expression
+# OR
+# Ternary Operator
+x = 9
+y = 0 if (x < 100) else x
+
+user_val = int(input())
+cond_str = ''' Your solution goes here '''
+cond_str = 'negative' if (user_val < 0 ) else 'nonnegative'
+print(f'{user_val} is {cond_str}')
+
+num_users = int(input())
+update_direction = int(input())
+num_users = (num_users + 1) if (update_direction== 3) else (num_users - 1)
+print(f'New value is: {num_users}')
