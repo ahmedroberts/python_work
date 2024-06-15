@@ -3,6 +3,8 @@
 # Module 04 Programming Assignment
 # Part B
 
+# This program calculates weekly pay for an individual employee at Larry's Landscaping.
+
 '''
 Larry's Landscaping pays employees differently depending on their job title and experience. 
 In a program called landscape_pay.py, use separate prompts to collect the following input:
