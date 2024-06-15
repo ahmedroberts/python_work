@@ -20,7 +20,20 @@ General cleanup employees make $14/hour for the first year, then go to $15/hour
 print('\nPlease enter job title: ')
 job_title = input('("T" for tree trimmer, "L" for lawncare specialist, "C" for general cleanup): \n')
 hours_worked = float(input('\nPlease enter number of hours worked this week: \n'))
-years = int(input('\nPlease enter number of years employed: \n'))
-gross_pay_weekly = 100
+years = float(input('\nPlease enter number of years employed: \n'))
 
-print(f'\nYour gross pay is ${gross_pay_weekly} per week.\n')
+if (job_title == 'T'):
+  message = 'tree trimmer'
+  hourly_pay = 15 if (years <= 1) else 16
+elif (job_title == 'L'):
+  message = 'lawn care specialist'
+  hourly_pay = 13 if (years <= 2) else 14.5
+elif (job_title == 'C'):
+  message = 'general cleanup'
+  hourly_pay = 14 if (years <= 1) else 15
+else:
+  message = r'You did not select "T", "L", or "C"'
+
+gross_pay_weekly = hours_worked * hourly_pay
+print(f'\n --- {message} ---')
+print(f'\nGross pay is ${gross_pay_weekly:.2f} this week.\n')
