@@ -20,7 +20,7 @@ if wall_height <= 8:
   elif (monthly_visit >= 4) or (deep_cleaning >= 3):
     plan = 'B'
     price = 58
-# If wall height is less than 8
+# If wall height is other than (greater than or equal to 8)
 else:
   # Check monthly visits less tnan 4
   # - and deep cleaning is less than 3
