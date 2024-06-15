@@ -5,6 +5,7 @@
 
 # This program recommends appropriate service plan options from Wanda's Wall Cleaning.
 
+# Prompt user and collect data
 wall_height = float(input('\nPlease enter wall height in feet: \n'))
 monthly_visit = int(input('Please enter number of monthly visits: \n'))
 deep_cleaning = int(input('Please enter number of yearly deep cleanings: \n'))

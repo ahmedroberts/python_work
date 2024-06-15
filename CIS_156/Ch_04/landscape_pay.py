@@ -5,7 +5,7 @@
 
 # This program calculates weekly pay for an individual employee at Larry's Landscaping.
 
-# Prompt User
+# Prompt User and collect data
 print('\nPlease enter job title code. ')
 job_title = input('("T" for tree trimmer, "L" for lawncare specialist, "C" for general cleanup): \n')
 hours_worked = float(input('Please enter number of hours worked this week: \n'))
