@@ -1,5 +1,6 @@
 # Ahmed O. Roberts
-# Chapter 5 - Assignment
+# Module 05 - Programming Assignment
+# Part A
 
 # This program adds up a series of numbers
 
