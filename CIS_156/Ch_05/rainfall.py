@@ -14,6 +14,7 @@ while num_rainfalls < 7:
   rainfall = float(input(f'Enter rainfall {num_rainfalls + 1}: '))
   num_rainfalls += 1
   
+total_rainfall += rainfall
 print(f'\nOver {num_rainfalls} days this week:')
 print(f'Total rainfall for the week:   {total_rainfall}')
 print(f'Average rainfall for the week:  {(total_rainfall / num_rainfalls):.2f}\n')
