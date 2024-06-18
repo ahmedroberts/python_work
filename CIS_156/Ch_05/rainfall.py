@@ -7,7 +7,9 @@
 total_rainfall = 0
 num_rainfalls = 1
 
-rainfall = float(input(f'\nEnter rainfall {num_rainfalls}: '))
+print('\nEnter the daily rainfall, one day at a time.\nThe Aggregations will be calculated after 7 entries\n')
+
+rainfall = float(input(f'Enter rainfall {num_rainfalls}: '))
 
 while num_rainfalls < 7:
   total_rainfall += rainfall
