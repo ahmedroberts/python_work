@@ -60,3 +60,8 @@ def find_priority(num_project_tasks):
 print(f'Testing 80: {find_priority(80)}')
 print('\n# ---------------------------------------------------------------------------------\n')
 
+def print_values(num_a, num_b):
+   for n in range(num_a, num_b + 1): 
+      print(n, end=' ')
+   
+print_values(9, 15)
