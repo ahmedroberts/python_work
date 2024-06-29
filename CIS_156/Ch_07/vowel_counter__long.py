@@ -5,6 +5,8 @@
 # This program counts the number of vowels in a given string
 
 print('\nEnter a phrase or sentence: ')
+
+evaluated_string = "aaaaaaaaarrrgghhh! -- King Ahmed is the 9th Raikage  AEIOUY aeiouy!"
 evaluated_string = input()
 
 vowel_dict = {
