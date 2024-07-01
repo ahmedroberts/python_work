@@ -9,3 +9,12 @@ if (nth_person >= 1) and (nth_person <= 5):
 
 animals = ['cat', 'dog', 'bird', 'raptor']
 print(animals[0])
+
+# Print Values
+
+user_values = [1, 4, 9]
+
+print(user_values)
+
+# Copy List
+uv_copy = user_values[:]
