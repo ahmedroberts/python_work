@@ -18,3 +18,12 @@ print(user_values)
 
 # Copy List
 uv_copy = user_values[:]
+
+
+user_values = [1, 5, 7]
+user_values[0] = user_values[0] + 1
+user_values[2] = user_values[2] + 1
+user_values[1] = user_values[1] + 2
+
+print(user_values)
+
