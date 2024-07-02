@@ -27,3 +27,13 @@ user_values[1] = user_values[1] + 2
 
 print(user_values)
 
+print()
+my_list = [3.2, 5.0, 16.5, 12.25]
+
+for i in range(len(my_list)):
+    my_list[ i ] += 5
+    
+user_values = [3, 5, 8]
+
+for n in range(len(user_values)):
+   print(user_values[n])
