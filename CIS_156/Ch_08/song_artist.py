@@ -7,7 +7,7 @@
 
 import random
 
-greeting = 'Welcome to the 90\'s artist finder'
+greeting = '\nWelcome to the 90\'s artist finder\l'
 print(greeting)
 
 nineties_songs = {
@@ -21,8 +21,12 @@ nineties_songs = {
 }
 
 songs = list(nineties_songs.keys())
+print('list of songs:', songs) # proof of all keys
+
 random_song = random.choice(songs)
-print(f'\nSong name example: {random_song}')
+print(f'\nSong name example: {random_song}\n') # randomly select a song
+
+
 inp_song = input('Enter title (hopefully, any part) of the song name: ')
 print(inp_song)
 
@@ -33,11 +37,20 @@ create a function to
 - return the full song title
 '''
 
-def get_song_title():
+found_song = False
+
+if inp_song in songs:
+  found_song = True
+  song_name = inp_song # assign song <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  print(f'\nSong found: [{found_song}] => Song: `{song_name}` artist is: `{nineties_songs[song_name]}`\n')
+else:
+  print(f'Sorry that song, `{inp_song}` was not found.')
+
+def get_90s_song_title():
   pass
 
 '''
 return artis in dictionary or artist not found
 '''
-def get_artist_name(song_title):
+def get_90s_artist_name(song_title):
   pass
