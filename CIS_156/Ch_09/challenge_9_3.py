@@ -83,4 +83,5 @@ location2.scale_x_y_z(scaling_factor2)
 print(f"Second location's scaled coordinates {location2.x_coord}, {location2.y_coord}, {location2.z_coord}")
 
 ##############################################################
+
 ##############################################################
