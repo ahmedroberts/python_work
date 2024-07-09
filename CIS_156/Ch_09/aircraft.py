@@ -35,6 +35,23 @@ class Aircraft:
     self.altitude = altitude
     self.distance = distance
     
-  def increase_altitude(self):
+  def increase_altitude(self, altitude):
+    increased_altitude = self.altitude + 500
+    return increased_altitude
+  
+  def decrease_altitude(self, altitude):
+    decreased_altitude = altitude - 500
+    return decreased_altitude
+  
+  def move_closer(self, distance):
+    closer_distance = distance - 10
+    return closer_distance
+  
+  def move_farther(self, distance):
+    farther_distance = distance + 10
+    return farther_distance
+  
+  def print_position(self):
     pass
+  
   
