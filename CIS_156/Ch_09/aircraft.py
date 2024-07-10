@@ -30,36 +30,36 @@ Finally, use the print_position method to output information about both objects.
 """
 
 class Aircraft:
+  aircraft_id = 'Unknown'
+  altitude = 0
+  distance = 0
+  
   def __init__(self, aircraft_id, altitude, distance):
     self.aircraft_id = aircraft_id
     self.altitude = altitude
     self.distance = distance
     
-  def increase_altitude(self, altitude):
-    increased_altitude = altitude + 500
-    return increased_altitude
+  def increase_altitude(self):
+    self.altitude = self.altitude + 500
   
-  def decrease_altitude(self, altitude):
-    decreased_altitude = altitude - 500
-    return decreased_altitude
+  def decrease_altitude(self):
+    self.altitude = self.altitude - 500
   
-  def move_closer(self, distance):
-    closer_distance = distance - 10
-    return closer_distance
+  def move_closer(self):
+    self.distance = self.distance - 10
   
-  def move_farther(self, distance):
-    farther_distance = distance + 10
-    return farther_distance
+  def move_farther(self):
+    self.distance = self.distance + 10
   
   def print_position(self):
     print(f'\nId: {self.aircraft_id}\nAltitude: {self.altitude}\nDistance: {self.distance}')
     
 
-aircraft1_id = input('Enter first aircraft id: ')
+aircraft1_id = input('\nEnter first aircraft id: ')
 aircraft1_alt = int(input('Enter first aircraft altitude: '))
 aircraft1_dist = int(input('Enter first aircraft distance: '))
 
-aircraft2_id = input('Enter second aircraft id: ')
+aircraft2_id = input('\nEnter second aircraft id: ')
 aircraft2_alt = int(input('Enter second aircraft altitude: '))
 aircraft2_dist = int(input('Enter second aircraft distance: '))
 
@@ -70,16 +70,14 @@ print()
 aircraft1.print_position()
 aircraft2.print_position()
 
-print('\n# Aircraft 1: increase 99, decrease 5, closer 22')
-aircraft1.increase_altitude(99)
-aircraft1.decrease_altitude(5)
-aircraft1.move_closer(22)
+print('# Aircraft 1: increase, closer')
+aircraft1.increase_altitude()
+aircraft1.move_closer()
 
-print('# Aircraft 2: increase 75, decrease 15, closer 44\n')
-aircraft2.decrease_altitude(15)
-aircraft2.move_closer(44)
-aircraft2.increase_altitude(75)
+print('# Aircraft 2: closer, decrease')
+aircraft2.move_closer()
+aircraft2.decrease_altitude()
 
 aircraft1.print_position()
 aircraft2.print_position()
-  
+print()
