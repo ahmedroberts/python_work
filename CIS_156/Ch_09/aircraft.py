@@ -36,7 +36,7 @@ class Aircraft:
     self.distance = distance
     
   def increase_altitude(self, altitude):
-    increased_altitude = self.altitude + 500
+    increased_altitude = altitude + 500
     return increased_altitude
   
   def decrease_altitude(self, altitude):
@@ -52,6 +52,12 @@ class Aircraft:
     return farther_distance
   
   def print_position(self):
-    pass
+    print(f'\nId: {self.aircraft_id}\n Altitude: {self.altitude}\n Distance: {distance}')
+    
   
+aircraft1 = Aircraft(a1, b1, c1)
+aircraft1 = Aircraft(a1, b1, c1)
+
+  
+
   
