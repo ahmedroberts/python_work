@@ -2,7 +2,7 @@
 # Module 09 Programming Assignment
 # Part A
 
-# Yhis program creates a class to keep track of aircraft
+# This program creates a class to keep track of aircraft
 
 """
   _summary_
