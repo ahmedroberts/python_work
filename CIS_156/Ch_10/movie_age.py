@@ -1,6 +1,6 @@
 # Ahmed Roberts
 # Module 10 Programming Assignment
-# Part b
+# Part B
 
 # This program calculates price of movie based on age
 

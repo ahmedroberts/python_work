@@ -2,7 +2,7 @@
 # Module 10 Programming Assignment
 # Part A
 
-# This program calculates profit from yard landscaping
+# This program calculates profit from yard landscaping based on dimensions
 
 try:
   lawn_length = float(input('\nEnter length in yards: '))
