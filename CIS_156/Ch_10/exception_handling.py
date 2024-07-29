@@ -52,3 +52,6 @@ while user_input != 'q':
         print('Invalid height entered. Must be > 0.')
 
     user_input = input("Enter any key ('q' to quit): ")
+    
+    
+    

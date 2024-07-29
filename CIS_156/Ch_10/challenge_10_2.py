@@ -57,3 +57,33 @@ except ValueError:
     print('int(): Input is not an integer.')
 except ZeroDivisionError:
     print('total_travelers / num_days: Denominator cannot be zero.')
+    
+"""
+Dictionary num_to_word contains key-value pairs 
+5.5: 'five point five', 
+9.5: 'nine point five', 
+1.5: 'one point five', 
+7.0: 'seven point zero', 
+8.5: 'eight point five', and 2.5: 'two point five'. 
+In the try block, float num_key is read from input. 
+The key-value pair with num_key as the key in num_to_word is output. 
+Complete the following tasks:
+
+Write an exception handler to catch ValueError and output 'Input has to be a float.'
+Write an exception handler to catch KeyError and output 'num_key is not a key in num_to_word.'
+"""
+
+num_to_word = {
+	5.5: 'five point five', 9.5: 'nine point five', 1.5: 'one point five',
+	7.0: 'seven point zero', 8.5: 'eight point five', 2.5: 'two point five'
+}
+
+try:
+	num_key = float(input())
+	print(f'{num_key} -> {num_to_word[num_key]}')
+
+# Your code goes here
+except ValueError:
+  print('Input has to be a float.')
+except KeyError:
+  print('num_key is not a key in num_to_word.')
