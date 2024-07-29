@@ -20,7 +20,7 @@ while user_input != 'end':
         print('r', end=' ')
     except (NameError, IndexError):
         print('s', end=' ')
-    user_input 
+    user_input = input('again: ')
     
 print('\n------------------------------------\n')
 
