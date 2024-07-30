@@ -6,18 +6,21 @@
 
 import random
 
-students = ['Clark', 'Diana', 'Bruce', 'Hal', 'John', 'Arthur', 'Barry', 'Lois', 'Alfred', 'Selina']
+students = ['Clark', 'Diana', 'Bruce', 'Wally', 'John', 'Oswald', 'Selina', 'Edward', 'Rachel', 'Alfred']
 print(len(students))
 student_group = []
+count = 0
 
 num_in_group = int(input('\nInput the number (1 - 10) of students in the group: '))
 
-# only select as many as needed
 while len(student_group) < num_in_group:
+  count += 1
   selected_student = random.choice(students)
-  # if student not already in the list (assunmes names to be unique)
+  print(count, selected_student)
   if selected_student not in student_group:
     student_group.append(selected_student)
+  
+print(student_group, '\n-------\n')
 
 print('The group is:')
 for student in student_group:
