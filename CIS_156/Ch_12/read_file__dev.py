@@ -9,9 +9,11 @@ import os
 # Path of file on my system: gettysburg = os.path.join('CIS_156', 'Ch_12', 'address.txt')
 # Path of file if ran from same directory: gettysburg = "address.txt"
 gettysburg = os.path.join("address.txt")
+gettysburg2 = os.path.join('CIS_156', 'Ch_12', 'address.txt')
+print('1.', gettysburg, gettysburg2)
 
-# open the file in read mode
-myfile = open(gettysburg, 'r')
+# open the file
+myfile = open(gettysburg2, 'r')
 lines = myfile.readlines()
 
 # Create a dynamic prompt
