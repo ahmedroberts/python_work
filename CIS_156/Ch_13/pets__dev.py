@@ -6,7 +6,7 @@
 # This program also demonstrates derived classes
 
 ''' Global Variables '''
-spacer1 = '-'*50
+spacer1 = '-'*25
 
 ''' Classes '''
 # Base class of Pet
@@ -119,6 +119,8 @@ def demo_lion_class():
   print(f'\n{spacer1}\n{spacer1}')
   lion_king =  Lion()
   lion_king.set_species('Lion')
+  # lion_king.display()
+  # lion_king.check_mane()
   lion_king.set_name('Simba')
   lion_king.set_age(30)
   lion_king.set_birth_year('1994')
