@@ -7,9 +7,8 @@
 import os
 
 # Path of file on my system: envelope = os.path.join('CIS_156', 'Ch_12', 'envelope.txt')
-# Path of file if ran from same directory: envelope2 = "envelope.txt"
-envelope = os.path.join('CIS_156', 'Ch_12', 'envelope.txt')
-envelope2 = "envelope.txt"
+# Path of file if ran from same directory: envelope = "envelope.txt"
+envelope = os.path.join("envelope.txt")
 
 # This function creates and formats envelope.txt
 def create_envelope():
@@ -40,17 +39,12 @@ class Mailing_info:
 sender = Mailing_info()
 sender.name = 'Ahmed O. Roberts'
 sender.address = '2814 Earth Way'
-sender.city = 'Metropolis'
-sender.state = 'Wakanda'
-sender.zip = '85340-9999'
+sender.city = 'Wakanda'
+sender.state = 'AZ'
+sender.zip = '90210'
 
 # Create and populate recipient instance of Mailing_info
 recipient = Mailing_info()
-# recipient.name = 'Ahmed O. Roberts'
-# recipient.address = '20745iove you '
-# recipient.city = 'Metropolis'
-# recipient.state = 'Wakanda'
-# recipient.zip = '85340-9999'
 
 # Create a dynamic prompt
 print()
@@ -62,5 +56,6 @@ recipient.city    = input('city: ')
 recipient.state   = input('state: ')
 recipient.zip     = input('zip: ')
 
+# Call create_evelope
 create_envelope()
 print("\nThank you. Envelope created.\n")
