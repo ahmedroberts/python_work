@@ -9,7 +9,7 @@ import random
 ''' Global Variables '''
 
 spin = 0
-max_spins = 40
+max_spins = 29
 h_break1 = '-' * 50 # horizontal break
 
 ''' Create list of roulette numbers '''
@@ -49,6 +49,33 @@ payout_dict = {
   "Red": 1,
   "1 to 18": 1
 }
+
+''' Classes '''
+# Basic Player Class
+class Player:  
+  def __init__(self):
+    self.name = 'unkown'
+    self.starting_bank = 0
+    self.goal = 0
+    
+  def set_name(self, namae):
+    self.name = namae
+    
+  def set_play_money(self, ikura, negai):
+    self.starting_bank = ikura
+    self.goal = negai
+    
+# Roulette Player
+class Roulette_Player(Player):
+  def __init__(self):
+    Player.__init__(self)
+    self.bet_strat = 'unknown'
+    self.cutoff_amount = 0
+    
+  def set_betting(self, senryaku, teishi):
+    self.bet_strat = senryaku
+    self.cutoff_amout = teishi
+      
 
 # strategigic betting amounts
 strat_one_column = [2, 4, 6, 8, 13, 20, 30, 50, 80, 130, 210, 340, 130, 20, 20, 20]
