@@ -33,20 +33,52 @@ alt_strat  = strat_one_column
 player1 = Roulette_Player()
 player1.set_name('Big Money One')
 player1.set_play_money(12000, 15000)
-player1.set_betting(strat_one_column_high_limit, 1000)
+player1.set_betting('Last Column', strat_one_column_high_limit, 1000)
 
 player2 = Roulette_Player()
 player2.set_name('Noob Two')
 player2.set_play_money(5000, 7000)
-player2.set_betting(strat_martigale, 1500)
+player2.set_betting('Martingale', strat_martigale, 1500)
 
 player3 = Roulette_Player()
 player3.set_name('Bet Nerd 3')
-player3.set_play_money(5000, 6000)
-player3.set_betting(strat_parachute, 2000)
+player3.set_play_money(2500, 6000)
+player3.set_betting('Parachute', strat_parachute, 2000)
 
-print('\n\n', player1.name, player1.starting_bank, player1.bet_strat, player1.goal, '\n')
-
+def show_player(player):
+  print(f'\n\t{"Curr Player":<10} : {player.name:<15}')
+  print(f'{player.name} is playing the `{player.strategy_name}` strategy.')
+  print(f'They started with a bank of ${player.starting_bank}', end=' ')
+  if player.up_down >= 0:
+    print(f'now up ${player.up_down}.')
+  else:
+    print(f'now down ${player.up_down}.')
+  print('******************\n')
+  
+def simulate_player_turn(player, spin_result):
+  print('start', player.total_spins, player.curr_bank)
+  player.total_spins += 1
+  curr_bet_amount = player.bet_strat[player.spins_since_hit]
+  if spin_result == 9:
+    print('Thats a hit on {spin_result}! => {curr_bet_amount}')
+    player.curr_bank = player.curr_bank + curr_bet_amount + (curr_bet_amount * payout_dict[player.bet_type])
+    print('start', player.total_spins, player.curr_bank)
+  else:
+    print('miss')
+    player.spins_since_hit += 1
+    print('start', player.total_spins, player.curr_bank)
+  
+  print('end', player.total_spins)
+  
+simulate_player_turn(player1, 9)
+simulate_player_turn(player1, 19)
+simulate_player_turn(player1, 9)
+simulate_player_turn(player1, 29)
+  
+  
+show_player(player3)
+show_player(player2)
+show_player(player1)
 
 ''' Start main program run '''
 
@@ -54,8 +86,12 @@ column_headers()
 print(h_break1)
 # Loop to run program
 while spin < max_spins:
-  # ---------- print('Spin:', 0, spin)
-  # bet1 = bet_amount()
+  # Simulate a spin
+  result = simulate_spin()
+  
+  
+  
+  # Calculate Spin Results
   bet2 = get_bet(curr_strat, spin) if spin < len(curr_strat) else curr_strat[len(curr_strat)-1]
   bet3 = get_bet(alt_strat,  spin) if spin < len(curr_strat) else alt_strat[len(alt_strat)-1]
   spin += 1
@@ -63,8 +99,8 @@ while spin < max_spins:
     print()
     column_headers()
     
-  # - simulate a spin
-  result = simulate_spin()
+  
+  # Display Spin Results
   print(f'{spin:>2}. {result:>5}', end=' ')
   # - calculate next bet
   # print(f'{bet1:>5}', end=' ')
