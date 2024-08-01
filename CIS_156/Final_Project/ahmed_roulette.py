@@ -47,7 +47,6 @@ player3.set_betting(strat_parachute, 2000)
 
 print('\n\n', player1.name, player1.starting_bank, player1.bet_strat, player1.goal, '\n')
 
-
 ''' Start main program run '''
 
 column_headers()
