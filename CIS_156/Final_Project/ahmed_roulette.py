@@ -16,7 +16,7 @@ spin = 0
 max_spins = 29
 h_break1 = '-' * 50 # horizontal break
 
-type_bet = "Six Line"
+type_bet = "Six Line" 
 print(f'\n {"My Payout":^20} --> {bet_dict["Six Line"]} => {payout_dict["Six Line"]}')
 print(f'\n {"My Payout":^20} --> {bet_dict[type_bet]} => {payout_dict[type_bet]}')
 
@@ -33,19 +33,23 @@ alt_strat  = strat_one_column
 player1 = Roulette_Player()
 player1.set_name('Big Money One')
 player1.set_play_money(12000, 15000)
-player1.set_betting(strat_one_column_high_limit, 1000)
+player1.set_betting('Last Column', strat_one_column_high_limit, 1000)
 
 player2 = Roulette_Player()
 player2.set_name('Noob Two')
 player2.set_play_money(5000, 7000)
-player2.set_betting(strat_martigale, 1500)
+player2.set_betting('Martingale', strat_martigale, 1500)
 
 player3 = Roulette_Player()
 player3.set_name('Bet Nerd 3')
-player3.set_play_money(5000, 6000)
-player3.set_betting(strat_parachute, 2000)
+player3.set_play_money(2500, 6000)
+player3.set_betting('Parachute', strat_parachute, 2000)
+all_players = [player1, player2, player3]
 
-print('\n\n', player1.name, player1.starting_bank, player1.bet_strat, player1.goal, '\n')
+for player in all_players:
+  print(f'{player.name}: {player.strategy_name},', end=' ')
+
+print('\nTesting...\n', player1.name, player1.starting_bank, player1.bet_strat, player1.goal, '\n')
 
 ''' Start main program run '''
 
