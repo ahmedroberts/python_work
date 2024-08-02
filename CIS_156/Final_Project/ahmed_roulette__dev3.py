@@ -17,9 +17,9 @@ spin = 0
 max_spins = 29
 h_break1 = '-' * 50 # horizontal break
 
-type_bet = "Six Line"
-print(f'\n {"My Payout":^20} --> {bet_dict["Six Line"]} => {payout_dict["Six Line"]}')
-print(f'\n {"My Payout":^20} --> {bet_dict[type_bet]} => {payout_dict[type_bet]}')
+# type_bet = "Six Line"
+# print(f'\n {"My Payout":^20} --> {bet_dict["Six Line"]} => {payout_dict["Six Line"]}')
+# print(f'\n {"My Payout":^20} --> {bet_dict[type_bet]} => {payout_dict[type_bet]}')
 
 # strategic betting amounts
 strat_one_column = [2, 4, 6, 8, 13, 20, 30, 50, 80, 130, 210, 340, 130, 20, 20, 20]
@@ -48,13 +48,15 @@ player3.set_betting('Parachute', strat_parachute, 2000)
 
 all_players = [player1, player2, player3]
 
+print(h_break1)
 # Display current Players
 for player in all_players:
-  print(player, h_break1)
-  print(f'{player.name}: {player.strategy_name},', end=' ')
+  # print(player, h_break1)
+  # print(f'{player.name}: {player.strategy_name},', end=' ')
   funcs.show_player(player)
   funcs.simulate_player_turn(player, 9)
-  
+print(h_break1)
+
 # simulate_player_turn(player1, 9)
 # simulate_player_turn(player1, 19)
 # simulate_player_turn(player1, 9)
@@ -64,8 +66,8 @@ for player in all_players:
 # show_player(player2)
 # show_player(player1)
 
-print("9 in 8, 9, 10:", funcs.check_hit(9, [8, 9, 10]))
-print("9 in 10, 11, 12:", funcs.check_hit(9, [10, 11, 12]))
+print("\nTesting... 9 in 8, 9, 10:", funcs.check_hit(9, [8, 9, 10]))
+print("\nTesting... 9 in 10, 11, 12:", funcs.check_hit(9, [10, 11, 12]))
   
 ''' Start main program run '''
 
@@ -91,12 +93,14 @@ while spin < max_spins:
     print()
     funcs.column_headers()
     
-  
   # Display Spin Results
   print(f'{spin:>2}. {result:>5}', end=' ')
   # - calculate next bet
   # print(f'{bet1:>5}', end=' ')
   print(f'{bet2:>7}', end=' ')
   print(f'{bet3:>7}')
+  
+  # Test a player's spin ############################
+  funcs.simulate_player_turn(player1, result)
 
 print(f'\n{"*** All done. ***":^25}\n')
