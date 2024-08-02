@@ -27,7 +27,6 @@ class Roulette_Player(Player):
     self.bet_strat = []
     self.bet_type = 'unkown'
     self.cutoff_amount = 0
-    self.up_down = 0
     self.total_spins = 0
     self.spins_since_hit = 0
     

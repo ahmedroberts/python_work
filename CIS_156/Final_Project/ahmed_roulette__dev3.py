@@ -84,7 +84,6 @@ while spin < max_spins:
   # Simulate a spin
   result = funcs.simulate_spin()
   
-  
   # Calculate Spin Results
   bet2 = funcs.get_bet(curr_strat, spin) if spin < len(curr_strat) else curr_strat[len(curr_strat)-1]
   bet3 = funcs.get_bet(alt_strat,  spin) if spin < len(curr_strat) else alt_strat[len(alt_strat)-1]
