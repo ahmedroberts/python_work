@@ -1,0 +1,76 @@
+[
+    {
+        "name": "Sloth",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Pilosa",
+            "family": "Bradypodidae",
+            "genus": "Bradypus",
+            "scientific_name": "Choloepus Hoffmani"
+        },
+        "locations": [
+            "Central-America",
+            "South-America"
+        ],
+        "characteristics": {
+            "main_prey": "Leaves, Buds, Fruit",
+            "habitat": "Tall trees in tropical rainforest",
+            "predators": "Eagles, Snakes, Jaguar",
+            "diet": "Omnivore",
+            "average_litter_size": "1",
+            "lifestyle": "Solitary",
+            "favorite_food": "Leaves",
+            "type": "Mammal",
+            "slogan": "It's body temperature is between 30 - 34 degrees!",
+            "color": "BrownGreyWhiteTan",
+            "skin_type": "Fur",
+            "top_speed": "15 mph",
+            "lifespan": "25-40 years",
+            "weight": "4.5-6kg (10-13lbs)"
+        }
+    },
+    {
+        "name": "Unau (Linnaeus’s Two-Toed Sloth)",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Pilosa",
+            "family": "Choloepodidae",
+            "genus": "Choloepus",
+            "scientific_name": "Choloepodidae didactylus"
+        },
+        "locations": [
+            "South-America"
+        ],
+        "characteristics": {
+            "prey": "Insects, small vertebrates",
+            "name_of_young": "Baby sloths, pups",
+            "group_behavior": "Solitary",
+            "estimated_population_size": "Unknown",
+            "biggest_threat": "Predation, habitat loss, car collisions",
+            "most_distinctive_feature": "Two toes on front legs",
+            "other_name(s)": "Linnaeus's two-toed sloth, Linne's two-toed sloth, Megalonychidae",
+            "gestation_period": "6 months",
+            "litter_size": "1",
+            "habitat": "Rainforests",
+            "predators": "harpy eagles, jaguars, ocelots, anaconda snakes, domestic dogs, and humans",
+            "diet": "Omnivore",
+            "favorite_food": "Vegetation, insects, small vertebrates",
+            "type": "Xenarthran",
+            "common_name": "unau, two-toed sloth, southern two toed-sloth",
+            "number_of_species": "1",
+            "location": "South America",
+            "color": "BrownGreyGreen",
+            "skin_type": "Hair",
+            "top_speed": "0.17 mph",
+            "lifespan": "20-40 years",
+            "weight": "8.8-17.6lbs",
+            "length": "23-28 inches",
+            "age_of_sexual_maturity": "3 years for females, 4-5 years for males",
+            "age_of_weaning": "1 year"
+        }
+    }
+]
