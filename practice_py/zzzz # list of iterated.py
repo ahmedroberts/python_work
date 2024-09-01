@@ -1,7 +1,7 @@
 # list of iterated
 
 from itertools import permutations
-"""
+
 tt = [7,8,9]
 zz = list(permutations(tt))
 print('')
@@ -22,7 +22,7 @@ print('-------------------------')
 print('')
 xxx = list(permutations(xx))
 print(xxx)
-"""
+
 # Sample Data
 x = 1
 y = 2
